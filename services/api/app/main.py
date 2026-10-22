@@ -9,11 +9,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
 from app.db import init_db
 from app.routers import auth, chat, datasets
+from app.security import check_jwt_secret
 
 
 @asynccontextmanager
 async def lifespan(_: FastAPI) -> AsyncIterator[None]:
+    check_jwt_secret()
     init_db()
+    auth.ensure_demo_user()
     yield
 
 

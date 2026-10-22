@@ -11,6 +11,8 @@ class Settings(BaseSettings):
     database_url: str = "postgresql://app:app@postgres:5432/app"
     jwt_secret: str = "change-me"
     cors_origins: str = "http://localhost:3000"
+    demo_email: str = "demo@example.com"
+    demo_password: str = "demo1234"
 
     # agent
     use_mock_agent: bool = True

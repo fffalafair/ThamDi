@@ -20,6 +20,10 @@ export type ChatResponse = {
   meta: { model?: string | null; tokens?: number | null; ms?: number | null; retries: number };
 };
 
+export type AuthToken = { access_token: string; token_type: "bearer" };
+
+export type User = { id: string; email: string };
+
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 export async function ask(datasetId: string, question: string): Promise<ChatResponse> {
