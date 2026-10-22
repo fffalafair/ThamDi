@@ -10,9 +10,11 @@ echo "1) health"
 curl -fsS "$API/health" | grep -q '"ok"'
 
 echo "2) chat"
-curl -fsS -X POST "$API/api/chat" \
-  -H 'Content-Type: application/json' \
-  -d '{"dataset_id":"demo","question":"มีลูกค้ากี่คน"}' | grep -q '"status"'
+# ส่ง body ผ่าน stdin: บน Windows ภาษาไทยใน argument ของ curl จะถูกแปลง encoding จน API ตอบ 400
+printf '%s' '{"dataset_id":"demo","question":"มีลูกค้ากี่คน"}' |
+  curl -fsS -X POST "$API/api/chat" \
+    -H 'Content-Type: application/json' \
+    --data-binary @- | grep -q '"status"'
 
 echo "3) web"
 curl -fsS -o /dev/null "$WEB"
