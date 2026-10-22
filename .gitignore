@@ -1,0 +1,29 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# data (ไฟล์ที่ผู้ใช้อัปโหลดและฐานข้อมูลที่สร้างขึ้น)
+data/
+*.duckdb
+*.duckdb.wal
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# node
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# os / editor
+.DS_Store
+.vscode/
+.idea/
