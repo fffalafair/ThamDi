@@ -1,4 +1,4 @@
-"""agent loop (คนที่ 1)
+"""agent loop (P1)
 
 TODO ตามแผน:
 - 23–24 ต.ค.  ระบบ A: schema + คำถาม → SQL ครั้งเดียว

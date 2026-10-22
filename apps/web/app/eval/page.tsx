@@ -1,4 +1,4 @@
-// หน้าผลการทดสอบ (คนที่ 2) — TODO 1–2 พ.ย.
+// หน้าผลการทดสอบ (P2) — TODO 1–2 พ.ย.
 // อ่านจาก GET /api/eval/results แสดงตาราง 4 ระบบ × 7 หมวด และข้อที่ตอบผิด
 
 export default function EvalPage() {

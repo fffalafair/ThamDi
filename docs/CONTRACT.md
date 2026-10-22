@@ -1,20 +1,20 @@
 # สัญญากลาง (Contract)
 
-ไฟล์นี้คือข้อตกลงระหว่างคนที่ 1 (agent) และคนที่ 2 (web + ระบบ)
+ไฟล์นี้คือข้อตกลงระหว่าง P1 [@fffalafair](https://github.com/fffalafair) (agent) และ P2 [@SoSick41](https://github.com/SoSick41) (web + ระบบ)
 **เปลี่ยนอะไรในนี้ ต้องบอกอีกคนทันที** และแก้ `services/api/app/schemas.py` กับ `apps/web/lib/api.ts` ให้ตรงกัน
 
 ## 1. Endpoint
 
 | Method | Path | เจ้าของ | สถานะ |
 |---|---|---|---|
-| GET | `/health` | คนที่ 2 | ✅ |
-| POST | `/api/auth/register` | คนที่ 2 | ⏳ |
-| POST | `/api/auth/login` | คนที่ 2 | ⏳ |
-| POST | `/api/datasets` | คนที่ 2 | ⏳ |
-| GET | `/api/datasets` | คนที่ 2 | ⏳ |
-| GET | `/api/datasets/{id}` | คนที่ 2 | ⏳ |
-| POST | `/api/chat` | คนที่ 1 | 🟡 mock |
-| GET | `/api/eval/results` | คนที่ 1 | ⏳ |
+| GET | `/health` | P2 | ✅ |
+| POST | `/api/auth/register` | P2 | ⏳ |
+| POST | `/api/auth/login` | P2 | ⏳ |
+| POST | `/api/datasets` | P2 | ⏳ |
+| GET | `/api/datasets` | P2 | ⏳ |
+| GET | `/api/datasets/{id}` | P2 | ⏳ |
+| POST | `/api/chat` | P1 | 🟡 mock |
+| GET | `/api/eval/results` | P1 | ⏳ |
 
 ทุก endpoint ยกเว้น `/health` และ `/api/auth/*` ต้องมี `Authorization: Bearer <JWT>`
 

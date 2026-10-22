@@ -121,10 +121,10 @@ cd apps/web && npm install && npm run dev
 
 ## 6. ทีมและงานของแต่ละคน
 
-| ส่วน | โฟลเดอร์ | ผู้รับผิดชอบ |
-|---|---|---|
-| Agent, เครื่องมือ, ตัวตรวจ SQL/คำตอบ, eval | `services/api/app/agent/`, `eval/` | [ชื่อคนที่ 1] |
-| หน้าเว็บ, auth, อัปโหลด, deploy, CI | `apps/web/`, `services/api/app/routers/` | [ชื่อคนที่ 2] |
+| ส่วน | โฟลเดอร์ | ผู้รับผิดชอบ | ชื่อ |
+|---|---|---|---|
+| Agent, เครื่องมือ, ตัวตรวจ SQL/คำตอบ, eval | `services/api/app/agent/`, `eval/` | [@fffalafair](https://github.com/fffalafair) | ชลากร ศรีบุญเรือง |
+| หน้าเว็บ, auth, อัปโหลด, deploy, CI | `apps/web/`, `services/api/app/routers/` | [@SoSick41](https://github.com/SoSick41) | ศุภกร โนนทอง |
 
 สัญญาระหว่างสองส่วนอยู่ใน [`docs/CONTRACT.md`](docs/CONTRACT.md)
 

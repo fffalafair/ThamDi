@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # smoke test: ไล่เส้นหลักกับระบบที่รันอยู่
-# TODO (คนที่ 2): เพิ่ม register → login → upload → chat ด้วย token จริง
+# TODO (P2): เพิ่ม register → login → upload → chat ด้วย token จริง
 set -euo pipefail
 
 API="${API:-http://localhost:8000}"
