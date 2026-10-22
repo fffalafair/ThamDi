@@ -48,6 +48,8 @@ ThamDi/
 │   ├── app/
 │   │   ├── main.py               สร้างแอป, CORS, รวม router, /health
 │   │   ├── config.py             อ่านค่าจาก .env
+│   │   ├── db.py                 เชื่อมต่อ Postgres + สร้างตารางตอนเริ่ม (P2)
+│   │   ├── models.sql            ตาราง users, datasets, chat_history (P2)
 │   │   ├── schemas.py            รูปแบบข้อมูลกลาง (ต้องตรง CONTRACT.md)
 │   │   ├── ingest.py             แปลงไฟล์อัปโหลด 8 นามสกุล → DuckDB (P2)
 │   │   ├── routers/
