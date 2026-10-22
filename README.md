@@ -123,8 +123,8 @@ cd apps/web && npm install && npm run dev
 
 | ส่วน | โฟลเดอร์ | ผู้รับผิดชอบ | ชื่อ |
 |---|---|---|---|
-| Agent, เครื่องมือ, ตัวตรวจ SQL/คำตอบ, eval | `services/api/app/agent/`, `eval/` | [@fffalafair](https://github.com/fffalafair) | [ชื่อ-นามสกุล] |
-| หน้าเว็บ, auth, อัปโหลด, deploy, CI | `apps/web/`, `services/api/app/routers/` | [@SoSick41](https://github.com/SoSick41) | [ชื่อ-นามสกุล] |
+| Agent, เครื่องมือ, ตัวตรวจ SQL/คำตอบ, eval | `services/api/app/agent/`, `eval/` | [@fffalafair](https://github.com/fffalafair) | ชลากร ศรีบุญเรือง |
+| หน้าเว็บ, auth, อัปโหลด, deploy, CI | `apps/web/`, `services/api/app/routers/` | [@SoSick41](https://github.com/SoSick41) | ศุภกร โนนทอง |
 
 สัญญาระหว่างสองส่วนอยู่ใน [`docs/CONTRACT.md`](docs/CONTRACT.md)
 
