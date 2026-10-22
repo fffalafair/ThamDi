@@ -8,15 +8,27 @@
 | Method | Path | เจ้าของ | สถานะ |
 |---|---|---|---|
 | GET | `/health` | P2 | ✅ |
-| POST | `/api/auth/register` | P2 | ⏳ |
-| POST | `/api/auth/login` | P2 | ⏳ |
+| POST | `/api/auth/register` | P2 | ✅ |
+| POST | `/api/auth/login` | P2 | ✅ |
+| GET | `/api/auth/me` | P2 | ✅ |
 | POST | `/api/datasets` | P2 | ⏳ |
 | GET | `/api/datasets` | P2 | ⏳ |
 | GET | `/api/datasets/{id}` | P2 | ⏳ |
 | POST | `/api/chat` | P1 | 🟡 mock |
 | GET | `/api/eval/results` | P1 | ⏳ |
 
-ทุก endpoint ยกเว้น `/health` และ `/api/auth/*` ต้องมี `Authorization: Bearer <JWT>`
+ทุก endpoint ยกเว้น `/health`, `/api/auth/register` และ `/api/auth/login` ต้องมี `Authorization: Bearer <JWT>`
+ไม่มี token หรือ token หมดอายุ (24 ชม.) → `401` · หน้าเว็บพาไปหน้า login
+
+### Auth
+
+| Endpoint | Request | Response |
+|---|---|---|
+| `POST /api/auth/register` | `{ "email": "a@b.com", "password": "อย่างน้อย 8 ตัว" }` | `201` `{ "access_token": "...", "token_type": "bearer" }` · อีเมลซ้ำ `409` · ข้อมูลไม่ถูกรูปแบบ `422` |
+| `POST /api/auth/login` | `{ "email": "a@b.com", "password": "..." }` | `200` แบบเดียวกับ register · ผิด `401` · เกิน 10 ครั้ง/นาทีต่ออีเมล `429` |
+| `GET /api/auth/me` | — | `200` `{ "id": "uuid", "email": "a@b.com" }` |
+
+error ทุกตัวอยู่ในรูป `{ "detail": "ข้อความภาษาไทย" }` (ยกเว้น `422` ที่เป็นรูปแบบของ FastAPI)
 
 ## 2. `POST /api/chat`
 
@@ -79,3 +91,4 @@
 |---|---|---|
 | 22 ต.ค. | ฉบับแรก | ทั้งคู่ |
 | 22 ต.ค. | รองรับ 8 นามสกุล (หัวข้อ 3), เปลี่ยนชื่อโปรเจกต์เป็น ThamDi | ทั้งคู่ |
+| 23 ต.ค. | เพิ่มรายละเอียด auth และ `GET /api/auth/me` (หัวข้อ 1) | P2 |
