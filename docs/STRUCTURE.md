@@ -4,7 +4,7 @@
 ใช้คู่กับ [`CONTRACT.md`](CONTRACT.md) (สัญญากลาง), [`PLAN.md`](PLAN.md) (แผนรายวัน) และ [`TASKS.md`](TASKS.md) (แบ่งงาน)
 
 **สัญลักษณ์สถานะ:** ✅ ใช้งานได้แล้ว · 🟡 mock / บางส่วน · ⏳ ยังไม่ทำ (มี TODO)
-**ผู้รับผิดชอบ:** **P1** = คนที่ 1 (AI + Eval) · **P2** = คนที่ 2 (Web + ระบบ)
+**ผู้รับผิดชอบ:** **P1** = @fffalafair (AI + Eval) · **P2** = @SoSick41 (Web + ระบบ)
 
 ---
 
@@ -20,7 +20,8 @@ ThamDi/
 │
 ├── .github/
 │   ├── workflows/ci.yml          CI: pytest + ruff, ตรวจ SQL เฉลย, build เว็บ
-│   └── pull_request_template.md  เช็กลิสต์ก่อนขอ review
+│   ├── pull_request_template.md  เช็กลิสต์ก่อนขอ review
+│   └── CODEOWNERS                ใครดูแลไฟล์ไหน (GitHub ขอ review อัตโนมัติ)
 │
 ├── docs/
 │   ├── CONTRACT.md               สัญญา API ระหว่าง P1 กับ P2

@@ -1,4 +1,4 @@
-"""การสมัครและ login (คนที่ 2) — TODO 23–24 ต.ค.
+"""การสมัครและ login (P2) — TODO 23–24 ต.ค.
 
 - bcrypt (cost 10) สำหรับรหัสผ่าน
 - JWT ใน Authorization: Bearer <token>
@@ -25,9 +25,9 @@ class Token(BaseModel):
 
 @router.post("/register", response_model=Token, status_code=201)
 def register(body: Credentials) -> Token:
-    raise HTTPException(status_code=501, detail="TODO: คนที่ 2")
+    raise HTTPException(status_code=501, detail="TODO: P2")
 
 
 @router.post("/login", response_model=Token)
 def login(body: Credentials) -> Token:
-    raise HTTPException(status_code=501, detail="TODO: คนที่ 2")
+    raise HTTPException(status_code=501, detail="TODO: P2")

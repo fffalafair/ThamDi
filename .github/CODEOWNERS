@@ -1,0 +1,30 @@
+# ค่าเริ่มต้น: ทั้งคู่
+*                                         @fffalafair @SoSick41
+
+# P1 — AI + Eval
+/services/api/app/agent/                  @fffalafair
+/services/api/app/routers/chat.py         @fffalafair
+/services/api/tests/test_sql_guard.py     @fffalafair
+/services/api/tests/test_thai_dates.py    @fffalafair
+/eval/                                    @fffalafair
+/scripts/gen_sales_db.py                  @fffalafair
+
+# P2 — Web + ระบบ
+/apps/web/                                @SoSick41
+/services/api/app/main.py                 @SoSick41
+/services/api/app/ingest.py               @SoSick41
+/services/api/app/routers/auth.py         @SoSick41
+/services/api/app/routers/datasets.py     @SoSick41
+/services/api/tests/test_ingest.py        @SoSick41
+/services/api/tests/test_api.py           @SoSick41
+/services/api/Dockerfile                  @SoSick41
+/docker-compose.yml                       @SoSick41
+/Makefile                                 @SoSick41
+/scripts/smoke.sh                         @SoSick41
+/.github/                                 @SoSick41
+
+# ไฟล์สัญญากลาง: ต้องให้ทั้งคู่ดู
+/services/api/app/schemas.py              @fffalafair @SoSick41
+/services/api/app/config.py               @fffalafair @SoSick41
+/apps/web/lib/api.ts                      @fffalafair @SoSick41
+/docs/CONTRACT.md                         @fffalafair @SoSick41

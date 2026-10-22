@@ -1,4 +1,4 @@
-"""สร้างฐานข้อมูลยอดขายภาษาไทยสำหรับทดสอบ (คนที่ 1)
+"""สร้างฐานข้อมูลยอดขายภาษาไทยสำหรับทดสอบ (P1)
 
 ใช้: python scripts/gen_sales_db.py --out data/datasets/demo.duckdb --seed 42
 

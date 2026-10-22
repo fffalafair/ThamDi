@@ -1,4 +1,4 @@
-"""eval runner (คนที่ 1) — TODO 28–29 ต.ค.
+"""eval runner (P1) — TODO 28–29 ต.ค.
 
 ใช้: python eval/run.py --system A --db data/datasets/demo.duckdb
 

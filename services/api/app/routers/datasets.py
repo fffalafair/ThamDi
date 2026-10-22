@@ -1,4 +1,4 @@
-"""ชุดข้อมูล (คนที่ 2) — TODO 25–27 ต.ค. (งาน P2-05)
+"""ชุดข้อมูล (P2) — TODO 25–27 ต.ค. (งาน P2-05)
 
 อัปโหลด → app.ingest.ingest() แปลงเป็นไฟล์ DuckDB ที่ {DATA_DIR}/datasets/{dataset_id}.duckdb
 (ตำแหน่งนี้คือสัญญากับ agent ห้ามเปลี่ยนโดยไม่แก้ docs/CONTRACT.md)
@@ -20,14 +20,14 @@ from app.ingest import SUPPORTED_SUFFIXES  # noqa: E402,F401  ใช้ตรว
 
 @router.post("", status_code=201)
 async def upload(file: UploadFile) -> dict:
-    raise HTTPException(status_code=501, detail="TODO: คนที่ 2")
+    raise HTTPException(status_code=501, detail="TODO: P2")
 
 
 @router.get("")
 def list_datasets() -> list[dict]:
-    raise HTTPException(status_code=501, detail="TODO: คนที่ 2")
+    raise HTTPException(status_code=501, detail="TODO: P2")
 
 
 @router.get("/{dataset_id}")
 def get_dataset(dataset_id: str) -> dict:
-    raise HTTPException(status_code=501, detail="TODO: คนที่ 2")
+    raise HTTPException(status_code=501, detail="TODO: P2")

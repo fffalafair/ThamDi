@@ -1,6 +1,6 @@
 "use client";
 
-// หน้าแชท (คนที่ 2) — ตอนนี้ต่อกับ mock endpoint
+// หน้าแชท (P2) — ตอนนี้ต่อกับ mock endpoint
 // TODO: เลือกชุดข้อมูล, ประวัติแชท, กราฟ (Recharts), ปุ่มดาวน์โหลด CSV / คัดลอก SQL
 
 import { useState } from "react";
