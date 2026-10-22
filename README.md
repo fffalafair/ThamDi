@@ -1,11 +1,7 @@
-<p align="center"><img src="apps/web/public/mascot.svg" alt="น้องเต่าคิว" width="160"></p>
-
 <h1 align="center">ThamDi · ถามดิ</h1>
 <p align="center"><b>ถามดิ เดี๋ยวคิวรีให้</b><br>ThamDi Agent</p>
 
 เว็บที่ให้ผู้ใช้อัปโหลดไฟล์ตารางของตัวเอง (CSV, Excel, JSON, Parquet ฯลฯ) แล้วถามเป็นภาษาไทย ระบบใช้ AI agent เขียน SQL รันจริง แก้ตัวเองเมื่อผิด แล้วตอบพร้อมตาราง กราฟ และขั้นตอนการคิดที่ตรวจสอบได้
-
-**มาสคอต: น้องเต่าคิว** — แบกตารางไว้บนกระดอง ช้าแต่ชัวร์ (ตรวจ SQL และคำตอบทุกครั้ง) ไม่เคยทำของพัง (read-only, SELECT อย่างเดียว) และหดหัวแล้วลองใหม่เมื่อพลาด (วนแก้ตัวเอง ≤ 3 รอบ)
 
 > Final project รายวิชา Advanced Topics in Computer Software
 > 🚧 อยู่ระหว่างพัฒนา — แผนงาน [`docs/PLAN.md`](docs/PLAN.md) · แบ่งงาน [`docs/TASKS.md`](docs/TASKS.md) · โครงสร้าง [`docs/STRUCTURE.md`](docs/STRUCTURE.md)
